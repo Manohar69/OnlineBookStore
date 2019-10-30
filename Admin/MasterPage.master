@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%-- <link rel="stylesheet" href="css/menustyles.css" />--%>
+    <link rel="stylesheet" href="../css/menustyles.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="navmenu">
+            <ul>
+                <li><a href="Author.aspx">AUTHOR</a></li>
+                <li><a href="Books.aspx">BOOKS</a></li>
+                <li><a href="Branch.aspx">BRANCHS</a></li>
+                 <li><a href="Publisher.aspx">PUBLISHERS</a></li>
+                </ul>
+          </div>
+        </div>
+    <%--<div id="wrap">
+        <div id="navmenu">
+            <ul>
+                <li><a href="#"><span>BOOKS</span></a></li>
+                <li><a href="#"><span>AUTHORS</span></a></li>
+                 <li><a href="#"><span>PUBLISHERS</span></a></li>
+                <li><a href="#"><span>BRANCHES</span></a></li>
+                </ul>
+            </div>
+
+    </div>--%>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

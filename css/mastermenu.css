@@ -1,0 +1,32 @@
+.navabarDiv {
+width:100%;
+}
+.navabarDiv  li{
+    width: 20%;
+    background-color: blue;
+    text-align: center;
+    color:orange;
+    font-size: 20px;
+	border-right:1px solid white;
+}
+.navabarDiv a{
+color: white;
+font-family: inherit;
+text-transform: uppercase;
+}
+@media (max-width: 768px) {
+.navabarDiv  li{
+width:100%;
+border:1px solid black;
+}
+}
+.mainNavBar li ul {
+  display: none;
+}
+.insideUl li{
+width:100%;
+border: 1px solid white;
+}
+.mainNavBar li:hover ul {
+  display: block;
+}

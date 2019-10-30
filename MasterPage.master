@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="css/menustyles.css" />
+     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+<body style="background:#00ffff;">
+   
+    <div class="header">
+        <h1 align="center">ONLINE BOOK CATALOG</h1>
+    </div>
+
+    <nav>
+            <ul>
+                <li><a href="Default.aspx" class="active"><span>HOME</span></a></li>
+                <li><a href="Login.aspx"><span>LOGIN</span></a></li>
+                <li><a href="Registration.aspx"><span>REGISTRATION</span></a></li>
+                 <li><a href="BooksPage.aspx"><span>BOOKS</span></a></li>
+                <li><a href="PublishersPage.aspx"><span>PUBLISHERS</span></a></li>
+                <li><a href="Contact.aspx"><span>CONTACT US</span></a></li>
+                </ul>
+       
+    </nav>
+    <div style="clear:both"></div>
+    <form id="form1" runat="server" style="width:100%">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
